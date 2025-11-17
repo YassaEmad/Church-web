@@ -1,9 +1,9 @@
-<!-- # 🧭 2. شريط التنقل (NAVBAR)
+# 🧭 2. شريط التنقل (NAVBAR)
 
 ## Navbar Container
 
 ```tsx
-
+className = "bg-white shadow-sm sticky top-0 z-50 border-b border-border";
 ```
 
 ### Properties:
@@ -35,7 +35,7 @@ transition={{ type: "spring", stiffness: 100 }}
 ## Inner Container
 
 ```tsx
-
+className = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
 ```
 
 ### Properties:
@@ -52,7 +52,7 @@ transition={{ type: "spring", stiffness: 100 }}
 ## Navbar Height Container
 
 ```tsx
-
+className = "flex justify-between items-center h-16";
 ```
 
 ### Properties:
@@ -69,7 +69,7 @@ transition={{ type: "spring", stiffness: 100 }}
 ### Button Container:
 
 ```tsx
-
+className = "flex items-center gap-2 cursor-pointer";
 ```
 
 ### Properties:
@@ -95,7 +95,7 @@ whileTap={{ scale: 0.95 }}
 
 ```tsx
 className =
-
+  "w-10 h-10 bg-primary rounded-full flex items-center justify-center";
 ```
 
 ### Properties:
@@ -121,7 +121,7 @@ transition={{ duration: 0.6 }}
 ### Church Icon:
 
 ```tsx
-
+<Church className="h-6 w-6 text-white" />
 ```
 
 - **Size:** `24px × 24px` (w-6 h-6)
@@ -566,7 +566,7 @@ transition={{ duration: 0.8 }}
 
 ```tsx
 className =
-  // "absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60";
+  "absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60";
 ```
 
 ### Properties:
@@ -1182,10 +1182,10 @@ className =
 
 ## Image Overlay (on Hover)
 
-````tsx
+```tsx
 className =
-//   "absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4";
-// ```
+  "absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4";
+```
 
 ### Properties:
 
@@ -1211,7 +1211,7 @@ className =
     {image.date}
   </div>
 </div>
-````
+```
 
 #### Title:
 
@@ -1265,7 +1265,7 @@ className =
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}
   transition={{ duration: 0.3 }}
-  // className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
+  className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
   onClick={onClose}
 >
 ```
@@ -1290,16 +1290,16 @@ className =
 ## Close Button (Lightbox)
 
 ```tsx
-// <motion.button
-//   initial={{ opacity: 0, y: -20 }}
-//   animate={{ opacity: 1, y: 0 }}
-//   exit={{ opacity: 0, y: -20 }}
-//   transition={{ delay: 0.1 }}
-//   onClick={onClose}
-//   className="absolute top-4 left-4 z-[102] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-// >
-//   <X className="h-6 w-6" />
-// </motion.button>
+<motion.button
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  exit={{ opacity: 0, y: -20 }}
+  transition={{ delay: 0.1 }}
+  onClick={onClose}
+  className="absolute top-4 left-4 z-[102] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+>
+  <X className="h-6 w-6" />
+</motion.button>
 ```
 
 ### Properties:
@@ -2193,15 +2193,15 @@ className = "grid grid-cols-1 md:grid-cols-3 gap-8";
 ## Phone Item
 
 ```tsx
-// <div className="flex items-center gap-3">
-//   <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-//   <a
-//     href="tel:+201234567890"
-//     className="text-white/90 hover:text-accent transition-colors"
-//   >
-//     +20 123 456 7890
-//   </a>
-// </div>
+<div className="flex items-center gap-3">
+  <Phone className="text-accent h-5 w-5 flex-shrink-0" />
+  <a
+    href="tel:+201234567890"
+    className="hover:text-accent text-white/90 transition-colors"
+  >
+    +20 123 456 7890
+  </a>
+</div>
 ```
 
 ### Properties:
@@ -3008,11 +3008,11 @@ App
 - ✅ Opacity values
 - ✅ جداول مقارنة شاملة
 
-**إجمالي العناصر الموثقة:** كل element ظاهر على الشاشة
-**آخر تحديث:** 15 نوفمبر 2025
-**اللغة:** عربي كامل مع قيم تقنية بالإنجليزية
+**إجمالي العناصر الموثقة:** كل element ظاهر على الشاشة  
+**آخر تحديث:** 15 نوفمبر 2025  
+**اللغة:** عربي كامل مع قيم تقنية بالإنجليزية  
 **التنسيق:** Markdown مع جداول وأكواد
 
 ---
 
-**END OF DOCUMENTATION** -->
+**END OF DOCUMENTATION**

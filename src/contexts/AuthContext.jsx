@@ -4,7 +4,7 @@ const AuthContext = createContext();
 
 const ADMIN_PASSWORD = "123";
 
-function AuthProvider({ children }) {
+export function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const login = (password) => {
@@ -26,12 +26,10 @@ function AuthProvider({ children }) {
   );
 }
 
-function useAuth() {
+export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
     throw new Error("useAuth must be used within an AuthProvider");
   }
   return context;
 }
-
-export default { useAuth, AuthProvider };

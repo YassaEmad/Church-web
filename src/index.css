@@ -1,4 +1,3 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap");
 
 /* ---------------- Root Styles ---------------- */
@@ -16,33 +15,29 @@
   --border: rgba(212, 175, 55, 0.2);
   --destructive: #d4183d;
 }
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* ---------------- HTML Defaults ---------------- */
 html {
-  font-family: "Noto Kufi Arabic", sans-serif;
   scroll-behavior: smooth;
   direction: rtl;
-  font-size: 16px;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 /* ---------------- Body Defaults ---------------- */
 body {
+  font-family: "Noto Kufi Arabic", sans-serif;
   margin: 0;
   padding: 0;
   background: var(--backgroundCo);
   color: var(--muted-foreground);
   direction: inherit;
+  height: 100dvh;
 }
-
-/* ---------------- Theme Colors ---------------- */
-@theme {
-  --primary: #1a4d7a;
-  --backgroundCo: #fdfcfa;
-  --primary-foreground: #ffffff;
-  --secondary: #f5f1e8;
-  --accent: #d4af37;
-  --card: #ffffff;
-  --muted-foreground: #6b7280;
-  --border: rgba(212, 175, 55, 0.2);
-  --destructive: #d4183d;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
