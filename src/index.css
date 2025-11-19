@@ -14,6 +14,7 @@
   --muted-foreground: #6b7280;
   --border: rgba(212, 175, 55, 0.2);
   --destructive: #d4183d;
+  --foreground: #2c2c2c;
 }
 @tailwind base;
 @tailwind components;

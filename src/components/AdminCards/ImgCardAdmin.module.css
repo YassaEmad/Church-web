@@ -1,0 +1,54 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  height: 30rem;
+}
+
+.Image {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.textcontainer {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.textcontainer h3 {
+  font-size: 1.8rem;
+  color: var(--foreground);
+}
+
+.textcontainer p {
+  font-size: 1.4rem;
+}
+
+.trash {
+  border-radius: 100%;
+  border: 0.1rem solid var(--border);
+  color: var(--destructive);
+  padding: 0.8rem;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.trash:hover {
+  background: var(--accent);
+  color: white;
+}

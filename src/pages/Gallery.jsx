@@ -1,5 +1,48 @@
+import MoreBtn from "../components/UI/MoreBtn";
+import styles from "./News.module.css";
+import { useData } from "../contexts/DataContext";
+import { useNavigate } from "react-router-dom";
+import ImgCardsec from "../components/UI/ImgCardsec";
+import { motion } from "framer-motion";
+import { useMemo } from "react";
+import Loading from "../components/Loading";
 function Gallery() {
-  return <div>gallery</div>;
+  const navigate = useNavigate();
+  const data = useData();
+  const { gallery = [] } = data || {};
+  const latestGallery = useMemo(() => gallery, [gallery]);
+  if (!data) return <Loading />;
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className={styles.container}>
+        <MoreBtn word="العوده للصفحه الرئيسيه" onClick={() => navigate("/")} />
+        <h1>معرض الصور</h1>
+        <p>لحظات مُلتقطة من مجتمع كنيستنا وفعالياتنا واحتفالاتنا.</p>
+        <div className="mb-32 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {latestGallery.map((item) => (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5 }}
+              key={item.id}
+            >
+              <ImgCardsec
+                text={item.title}
+                alt={item.title}
+                src={item.url}
+                date={item.date}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
 }
 
 export default Gallery;

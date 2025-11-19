@@ -1,0 +1,26 @@
+.imgCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  position: relative;
+  height: 16rem;
+}
+.Image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  /* aspect-ratio: 3/4; */
+}
+.imgText {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 1.6rem;
+  z-index: 10;
+  font-size: 1.6rem;
+}

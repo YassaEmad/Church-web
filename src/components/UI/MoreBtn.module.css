@@ -1,0 +1,22 @@
+.more {
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  border: 0.1rem solid var(--border);
+  color: var(--foreground);
+  padding: 0.5rem 2rem;
+  background: transparent;
+  transition: all 0.3s ease;
+  border-radius: 99999px;
+  font-size: 1.6rem;
+}
+.more:hover {
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  color: white;
+}

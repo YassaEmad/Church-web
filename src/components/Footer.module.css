@@ -1,0 +1,66 @@
+.logoContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  background: var(--accent);
+  border: none;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logodisc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logoname {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.logoloc {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.contactContainer {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contacts p {
+  font-size: 1.4rem;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.icon:hover {
+  background: var(--accent);
+}
+.bottom {
+  border-top: 0.1rem solid white;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}

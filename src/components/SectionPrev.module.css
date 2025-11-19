@@ -1,0 +1,13 @@
+.sectionPrev {
+  margin-bottom: 2.4rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.header h2 {
+  color: var(--primary);
+  font-size: 1.6rem;
+}

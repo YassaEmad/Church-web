@@ -1,0 +1,59 @@
+.newCardContainer {
+  height: 100%;
+  border: 0.1rem solid var(--border);
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  background: var(--card);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.newCardContainer:hover {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  transform: translateY(-0.8rem);
+  transition: all 0.3s ease;
+}
+.calander {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--muted-foreground);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  align-self: flex-end;
+}
+.newsTitle {
+  font-size: 1.6rem;
+  color: var(--foreground);
+  font-weight: 500;
+  align-self: flex-start;
+}
+.newsDesc {
+  color: var(--muted-foreground);
+  line-height: 1.5;
+  padding-top: 0;
+  font-size: 1.4rem;
+  align-self: flex-start;
+}
+.expandButton {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 0;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 0.8rem;
+}
+
+.expandButton:hover {
+  opacity: 0.8;
+}
