@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import AddMass from "../AdminCards/AddMass";
 import NewsCardAd from "../AdminCards/NewsCardAd";
-import AdminPanal from "./Adminpanal";
+import AdminPanal from "./AdminPanal";
 import { useData } from "../../contexts/DataContext";
 import Loading from "../Loading";
 
