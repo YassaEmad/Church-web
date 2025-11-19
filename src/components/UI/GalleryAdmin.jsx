@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import AddImg from "../AdminCards/AddImg";
 import NewsCardAd from "../AdminCards/NewsCardAd";
-import AdminPanal from "./Adminpanal";
+import AdminPanal from "./AdminPanal";
 import { useData } from "../../contexts/DataContext";
 import Loading from "../Loading";
 import ImgCardAdmin from "../AdminCards/ImgCardAdmin";
