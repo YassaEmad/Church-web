@@ -12,6 +12,7 @@ function ImgCard({ src, alt, text, date }) {
         className={styles.imgCon}
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
+        onClick={() => setIsHovered((prev) => !prev)}
       >
         <motion.img
           className={styles.Image}
