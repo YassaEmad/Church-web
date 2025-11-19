@@ -87,10 +87,15 @@ function Home() {
               onClick={() => navigate("/gallery")}
             />
             <div className="mb-32 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
-              {latestGallery.map((item) => (
-                <div key={item.id}>
+              {latestGallery.map((item, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 * index, duration: 0.8 }}
+                  key={item.id}
+                >
                   <ImgCard text={item.title} alt={item.title} src={item.url} />
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

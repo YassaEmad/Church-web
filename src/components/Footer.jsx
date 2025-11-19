@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import { Church, MapPin, Facebook, MessageCircle } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 function Footer() {
   return (
     <>
