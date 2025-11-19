@@ -20,7 +20,7 @@ function Home() {
   const { news = [], mass = [], gallery = [] } = data || {};
   const latestNews = useMemo(() => news.slice(0, 3), [news]);
   const latestMasses = useMemo(() => mass.slice(0, 3), [mass]);
-  const latestGallery = useMemo(() => gallery.slice(0, 5), [gallery]);
+  const latestGallery = useMemo(() => gallery.slice(0, 4), [gallery]);
   if (!data) return <Loading />;
 
   return (
