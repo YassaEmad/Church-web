@@ -11,9 +11,13 @@ function Hero() {
         <div className={styles.heroContainer}>
           <img
             className={styles.heroImage}
-            src="https://res.cloudinary.com/dsibauwzo/image/upload/v1763564987/WhatsApp_Image_2025-11-19_at_17.06.13_08f33c36_uk7w6k.jpg"
+            src="https://res.cloudinary.com/dsibauwzo/image/upload/f_auto,q_auto/v1763564987/WhatsApp_Image_2025-11-19_at_17.06.13_08f33c36_uk7w6k.jpg"
             alt="St. George Church"
+            fetchpriority="high"
+            decoding="sync"
+            loading="eager"
           />
+
           <div className={styles.heroText}>
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
