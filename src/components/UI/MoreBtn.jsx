@@ -4,12 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 function MoreBtn({ word, onClick }) {
   return (
     <AnimatePresence>
-      <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <button className={Styles.more} onClick={onClick}>
           {word}
           <ArrowLeft size={16} />
         </button>
-      </motion.button>
+      </motion.div>
     </AnimatePresence>
   );
 }

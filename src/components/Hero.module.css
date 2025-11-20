@@ -45,7 +45,8 @@
   padding: 0.8rem 2.8rem;
   font-size: 1.6rem;
   border-radius: 9999px;
-  color: white;
+  color: #000000;
   background: var(--accent);
   margin: 2rem 0 0 0;
+  font-weight: 500;
 }
