@@ -16,6 +16,7 @@ function Hero() {
             fetchpriority="high"
             decoding="sync"
             loading="eager"
+            referrerPolicy="no-referrer"
           />
 
           <div className={styles.heroText}>

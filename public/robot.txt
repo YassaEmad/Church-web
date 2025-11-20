@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://st-gerges.vercel.app/sitemap.xml
