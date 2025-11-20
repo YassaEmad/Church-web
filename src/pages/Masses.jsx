@@ -21,8 +21,10 @@ function Masses() {
         className="flex flex-col gap-3"
       >
         <MoreBtn word="العوده للصفحه الرئيسيه" onClick={() => navigate("/")} />
-        <h1>أخبار الكنيسة</h1>
-        <p>ابق على اطلاع بآخر الأخبار والإعلانات من مجتمع كنيستنا.</p>
+        <h1>مواعيد القداسات</h1>
+        <p>
+          تابع معانا مواعيد القداسات أول بأول، علشان تعرف أقرب قداس يناسب وقتك.
+        </p>
       </motion.div>
       <div className="mb-32 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {latestMasses.map((item, index) => {

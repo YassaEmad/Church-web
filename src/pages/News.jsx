@@ -22,7 +22,7 @@ function News() {
       >
         <MoreBtn word="العوده للصفحه الرئيسيه" onClick={() => navigate("/")} />
         <h1>أخبار الكنيسة</h1>
-        <p>ابق على اطلاع بآخر الأخبار والإعلانات من مجتمع كنيستنا.</p>
+        <p>تابع آخر أخبار الكنيسة وكل اللي بيحصل أول بأول.</p>
       </motion.div>
       <div className="mb-32 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {latestNews.map((item, index) => {

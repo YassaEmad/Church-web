@@ -36,7 +36,7 @@ function Hero() {
               transition={{ delay: 0.7, duration: 0.5 }}
               className={styles.badge}
             >
-              قداس الأحد: 9:00 صباحاً
+              قداس الجمعه: 8:00 صباحاً
             </motion.div>
           </div>
         </div>

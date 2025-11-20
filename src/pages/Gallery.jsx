@@ -21,7 +21,7 @@ function Gallery() {
       >
         <MoreBtn word="العوده للصفحه الرئيسيه" onClick={() => navigate("/")} />
         <h1>معرض الصور</h1>
-        <p>لحظات مُلتقطة من مجتمع كنيستنا وفعالياتنا واحتفالاتنا.</p>
+        <p>صور من المناسبات واللحظات اللي شاركناها مع بعض.</p>
       </motion.div>
       <div className="mb-32 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
         {latestGallery.map((item, index) => (
