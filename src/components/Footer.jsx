@@ -26,10 +26,10 @@ function Footer() {
         <div className={styles.contacts}>
           <p>تواصل معانا</p>
           <div className="flex items-center justify-center gap-3">
-            <a href="" className={styles.icon}>
+            <a href="" className={styles.icon} aria-label="facebook-link">
               <Facebook size={24} />
             </a>
-            <a className={styles.icon} href="">
+            <a className={styles.icon} href="" aria-label="phone-link">
               <MessageCircle size={24} />
             </a>
           </div>

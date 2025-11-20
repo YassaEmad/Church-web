@@ -55,10 +55,18 @@ function Overlay({ onClose }) {
           />
           {error && <p className={styles.error}>{error}</p>}
           <div className={styles.buttonContainer}>
-            <button className={styles.btnLogin} onClick={handleLogin}>
+            <button
+              className={styles.btnLogin}
+              onClick={handleLogin}
+              aria-label="login-button"
+            >
               Login
             </button>
-            <button className={styles.btnClose} onClick={onClose}>
+            <button
+              className={styles.btnClose}
+              onClick={onClose}
+              aria-label="close-button"
+            >
               Close
             </button>
           </div>

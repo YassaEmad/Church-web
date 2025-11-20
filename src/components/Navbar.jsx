@@ -45,7 +45,10 @@ export default function Navbar() {
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <div className={styles.logoContainer}>
               <div className={styles.logo}>
-                <button onClick={() => setIsOverlayOpen(true)}>
+                <button
+                  aria-label="logo-button"
+                  onClick={() => setIsOverlayOpen(true)}
+                >
                   <motion.div
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
@@ -79,6 +82,7 @@ export default function Navbar() {
           <button
             className={styles.menuButton}
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="menu-button"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
