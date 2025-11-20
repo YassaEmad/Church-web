@@ -8,6 +8,7 @@ import { useData } from "../contexts/DataContext";
 import ImgCard from "../components/UI/ImgCard";
 import { motion } from "framer-motion";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet-async";
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -25,6 +26,13 @@ function Home() {
 
   return (
     <div className="mb-32">
+      <Helmet>
+        <title>كنيسة مار جرجس </title>
+        <meta
+          name="description"
+          content="مرحبًا بكم في كنيسة مار جرجس بالكابلات. تابعوا آخر الأخبار، القداسات، وأنشطة الكنيسة."
+        />
+      </Helmet>
       <Hero />
       <div className="mt-16 flex flex-col gap-12">
         <motion.div

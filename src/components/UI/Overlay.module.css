@@ -130,3 +130,20 @@
   margin-top: 0.5rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .error {
+    font-size: 1rem;
+  }
+  .btnLogin {
+    padding: 0.3rem 1rem;
+    font-size: 1.5rem;
+  }
+  .btnClose {
+    padding: 0.3rem 1rem;
+    font-size: 1.5rem;
+  }
+  .buttonContainer {
+    margin-top: 1.5rem;
+  }
+}

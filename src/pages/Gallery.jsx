@@ -6,6 +6,7 @@ import ImgCardsec from "../components/UI/ImgCardsec";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet-async";
 function Gallery() {
   const navigate = useNavigate();
   const data = useData();
@@ -14,6 +15,13 @@ function Gallery() {
   if (!data) return <Loading />;
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>معرض الصور</title>
+        <meta
+          name="description"
+          content="صور من المناسبات واللحظات اللي شاركناها مع بعض"
+        />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}

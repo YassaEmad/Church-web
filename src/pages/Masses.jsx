@@ -6,6 +6,7 @@ import MassCard from "../components/UI/MassCard";
 import { motion } from "framer-motion";
 import { useMemo } from "react";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet-async";
 function Masses() {
   const navigate = useNavigate();
   const data = useData();
@@ -14,6 +15,13 @@ function Masses() {
   if (!data) return <Loading />;
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title> مواعيد القداسات</title>
+        <meta
+          name="description"
+          content=" تابع معانا مواعيد القداسات أول بأول، علشان تعرف أقرب قداس يناسب وقتك "
+        />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}

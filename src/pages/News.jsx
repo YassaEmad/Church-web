@@ -6,14 +6,25 @@ import { useNavigate } from "react-router-dom";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet-async";
+
 function News() {
   const navigate = useNavigate();
   const data = useData();
   const { news = [] } = data || {};
   const latestNews = useMemo(() => news, [news]);
   if (!data) return <Loading />;
+
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>أخبار الكنيسة</title>
+        <meta
+          name="description"
+          content="تابع آخر أخبار كنيسة مار جرجس بالكابلات وكل الأنشطة والفعاليات."
+        />
+      </Helmet>
+
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -24,6 +35,7 @@ function News() {
         <h1>أخبار الكنيسة</h1>
         <p>تابع آخر أخبار الكنيسة وكل اللي بيحصل أول بأول.</p>
       </motion.div>
+
       <div className="mb-32 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
         {latestNews.map((item, index) => {
           return (
@@ -44,7 +56,6 @@ function News() {
         })}
       </div>
     </div>
-    // </motion.div>
   );
 }
 
